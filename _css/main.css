@@ -2,6 +2,7 @@
 :root{
     --primary-color:#37193B;
     --second-color:#fff;
+
 }
 
 .dock-bar{
@@ -42,23 +43,55 @@
 .s_estilosModerno{
     max-width: 1200px;
     width: 100%;
-    margin: auto;
+    margin: 100px auto 0;
+    
     display: flex; 
-    justify-content: space-between;    
+    justify-content: space-between;        
 }
 .s_estilosModerno .b_texto{
     max-width: 620px;
-    width: 100%;
-    border: 2px solid red;
-    padding: 20px;
+    width: 100%;    
+    padding: 30px 20px;
 }
 .s_estilosModerno h2{
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
 .s_estilosModerno p{
-    margin: 40px 40px 0 0;    
+    margin: 30px 40px 30px 0;   
+    line-height: 1.5; 
 }
-.s_estilosModerno__img{
-    border: 3px solid red;
+.s_estilosModerno .s_estiloModerno__btn{
+    border: none;
+    padding: 8px 12px;
+    background-color: #37193B;
+    color: #fff;
+}
+.experiencia{    
+    background: linear-gradient(rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(../_assets/bg_experiencia.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 438px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.experiencia__info{
+    max-width: 980px;
+    margin: 0 auto;
+    color: var(--second-color);
+    text-align: center;    
+    min-height: 250px;   
+}
+.experiencia__titulo{
+    
+}
+.experience__desc{
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px 45px;
 }
