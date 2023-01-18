@@ -2,7 +2,8 @@
 :root{
     --primary-color:#37193B;
     --second-color:#fff;
-
+    --s-center:1200px;
+    --c-center:610px;
 }
 
 .dock-bar{
@@ -41,7 +42,7 @@
 }
 /**/
 .s_estilosModerno{
-    max-width: 1200px;
+    max-width: var(--s-center);
     width: 100%;
     margin: 100px auto 0;
     
@@ -70,7 +71,7 @@
 .experiencia{    
     background: linear-gradient(rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(../_assets/bg_experiencia.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     min-height: 438px;
@@ -80,18 +81,53 @@
     margin: 100px 0;
 }
 .experiencia__info{
-    max-width: 980px;
+    max-width: 610px;
+    width: 100%;
     margin: 0 auto;
     color: var(--second-color);
-    text-align: center;    
-    min-height: 250px;   
-}
-.experiencia__titulo{
-    
+    text-align: center;     
 }
 .experience__desc{
-    max-width: 600px;
+    
     text-align: center;
     line-height: 1.5;
     padding: 20px 45px;
+}
+.melhore-exp{
+    max-width: var(--s-center);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.melhores-exp__info{
+    text-align: right;
+}
+.melhore-exp__desc{
+    max-width: 600px;
+    line-height: 1.5;    
+}
+.depoimentos{
+    background: linear-gradient(rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(../_assets/bg_depoimentos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 366px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.depoimentos__info{
+    max-width: var(--c-center);
+    margin: auto;
+    color: var(--second-color);
+    text-align: center;   
+}
+.galeria__cards{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
