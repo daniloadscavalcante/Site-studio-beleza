@@ -2,6 +2,7 @@
 :root{
     --primary-color:#37193B;
     --second-color:#fff;
+    --third-color:#E75A7A;
     --s-center:1200px;
     --c-center:610px;
 }
@@ -24,7 +25,7 @@
 .nav-wrapper{
     background: var(--primary-color);
     padding: 0 50px;
-    height: 46px;    
+    height: 40px;    
 }
 .nav-wrapper .menu{
     display: flex;
@@ -37,15 +38,21 @@
 }
 .nav-wrapper .menu_link{
     display: block;
-    padding: 10px 10px;
-    text-transform: uppercase;     
+    margin: 10px 10px;
+    padding: 5px 0;
+    text-transform: uppercase;   
+    font-size: 12px;
+    font-weight: 500;  
+}
+.nav-wrapper .menu_link:hover{
+    border-bottom: 2px dotted var(--third-color);
 }
 /**/
 .s_estilosModerno{
     max-width: var(--s-center);
     width: 100%;
     margin: 100px auto 0;
-    
+    padding: 10px;
     display: flex; 
     justify-content: space-between;        
 }
@@ -65,7 +72,7 @@
     background-color: #37193B;
     color: #fff;
 }
-.experiencia{    
+.experiencia, .depoimentos{    
     background: linear-gradient(rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(../_assets/bg_experiencia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,36 +91,30 @@
     color: var(--second-color);
     text-align: center;     
 }
-.experience__desc{
-    
+.experience__desc{    
     text-align: center;
     line-height: 1.5;
     padding: 20px 45px;
 }
-.melhore-exp{
+.melhores-exp{
     max-width: var(--s-center);
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding: 0 10px;
 }
 .melhores-exp__info{
     text-align: right;
 }
-.melhore-exp__desc{
+.melhores-exp__texto{
     max-width: 600px;
     line-height: 1.5;    
 }
 .depoimentos{
     background: linear-gradient(rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(../_assets/bg_depoimentos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    min-height: 366px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 0;
+    background-attachment: fixed;    
+    min-height: 366px;    
 }
 .depoimentos__info{
     max-width: var(--c-center);
@@ -129,25 +130,30 @@
     max-width: 1100px;
     margin: auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 30px 0 150px;
 }
 .galeria__card{
-    width: 20%;
+    max-width: 222px;
+    width: 100%;
     overflow: hidden;
-    margin: 10px;
-    
+    margin: 10px;    
     transition: all .5s linear;
 }
+.galeria__card > figure{
+    height: 100%;
+    background-color: black;
+}
 .galeria__card__img{
-    transition: all .3s linear;
+    transition: all .3s linear;    
+    height: 100%;
 }
 .galeria__card__img:hover{
     transform: scale(1.1);
     transition: all .3s linear;
     cursor: pointer;
 }
-
 footer{
     background: var(--primary-color);
     min-height: 301px;
@@ -161,8 +167,8 @@ footer{
     width: 100%; 
     border  : 1px solid red;
     display: flex;
-    justify-content: space-between;
-    padding: 50px 89px;
+    justify-content: space-around;
+    padding: 50px 30px;
 }
 .foonter-center__logo{
     text-align: center;

@@ -1,0 +1,33 @@
+@media only screen and (min-width: 600px) and (max-width:900px){
+    h2{
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .s_estilosModerno .b_texto{
+        padding: 0 24px;
+    }
+    .s_estilosModerno p{
+        margin: 0;
+        font-size: 12px;
+    }
+    .experiencia, .depoimentos{
+        min-height: 300px;
+    }
+    .melhores-exp{
+        padding: 0 10px;
+    }
+    .melhores-exp__info{
+        padding: 0 24px;
+    }
+    .galeria__card{
+        max-width: 196px;
+        width: 100%;
+        overflow: hidden;
+        margin: 10px;    
+        transition: all .5s linear;
+    }
+}
