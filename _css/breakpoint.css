@@ -73,19 +73,41 @@
         background: #E75A7A;
         margin: 4px 0;
     }
+    .close-toggle{
+        position: absolute;
+        display: block;
+        color: #fff;
+        top: 20px;
+        right: 30px;
+        font-size: 25px;
+    }
     .nav-wrapper .menu{
         flex-direction: column;
-        justify-content: center;        
+        justify-content: center;  
+        align-items: center;      
         background: #37193B;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        display: none;        
+        display: none;           
     }
-    .nav-wrapper .menu_link{
-        margin: 10px 0;
-        padding: 5px 0;             
+    /* Sub-menu******************************8*/
+    .sub-menu{      
+        background: var(--primary-color);
+        position: static;
+        left: -2px;
+        display: none;         
+        text-align: left;
+        width: 158px;
+    }
+    .sub-menu-M{
+        width: auto;
+    }
+    .nav-wrapper .menu a{
+        margin: 8px 0;
+        padding: 9px 0;             
+        font-size: 20px;
     }   
     .hero .slider{       
         background-position: 70% 60%;        

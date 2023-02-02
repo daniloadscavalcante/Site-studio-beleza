@@ -6,32 +6,51 @@
     --s-center:1200px;
     --c-center:610px;
 }
+/*botao fexa menu mobile*/
+.close-toggle{
+    display: none;
+}
 /*submenu*/
 .sub-menu{      
-    background: var(--second-color);
+    background: var(--primary-color);
     position: absolute;
-    display: none;   
-    width: 120px;
-    margin-top: 1px;
+    left: -2px;
+    display: none;       
+    width: 131px;
 }
 .menu li:hover > ul{
     display: block;
 }
 .menu .sub-menu li{
-    margin: 2px!important;    
+    margin: 5px 0!important;      
+    padding: 0 10px;     
+    width: 100%;    
 }
 .menu .sub-menu li a{
-    padding: 7px 5px;    
+    padding: 5px 0;   
+    margin: 0;
+    display: inline-block;    
+}
+/*icone arrow down menu******************/
+.arrow-down{
+    font-size: 15px;
+    margin-left: 3px;
+    position: relative;
+    top: 1px;
 }
 /*sub-menu-M*/
 .sub-menu-M, .sub-menu-E{
+    width: 100%;
     position: absolute;
-    top: 0;
-    left: 120px;
-    background-color: yellow;
-    display: none;
+    top: -5px;
+    left: 130px;
+    background-color: var(--primary-color);
+    display:none;    
+    padding: 0;
 }
-
+.sub-menu-E{
+    width: auto;
+}
 .dock-bar{
     height: 50px;
     display: flex;
@@ -64,15 +83,18 @@
     margin: 0 5px; 
     position: relative;
 }
-.nav-wrapper .menu_link{
+/******************************************************/
+.nav-wrapper .menu a{
     display: block;
-    margin: 10px 10px;
-    padding: 5px 0;
+    margin: 5px 5px;
+    padding: 6px 0;
     text-transform: uppercase;   
     font-size: 12px;
-    font-weight: 500;  
+    font-weight: 500; 
+    border: 2px solid transparent; 
 }
-.nav-wrapper .menu_link:hover{
+
+.nav-wrapper .menu a:hover{
     border-bottom: 2px dotted var(--third-color);
 }
 .toggle{
@@ -216,8 +238,7 @@ footer{
     width: 183px;
     margin: auto;
 }
-.footer-contato{
-    
+.footer-contato{    
     color: var(--second-color); 
     line-height: 1.8;
 }
