@@ -6,6 +6,56 @@
     --s-center:1200px;
     --c-center:610px;
 }
+
+
+.dock-bar{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 0 55px;
+    background-color: var(--second-color);
+}
+.midias-socias{
+    font-size: 23px;
+    position: relative;
+    top: 5px;    
+}
+.midias-socias i{
+    font-size: 23px;
+    margin: 0 5px;    
+}
+.nav-wrapper{
+    background: var(--primary-color);
+    padding: 0 50px;
+    height: 50px;        
+}
+/*Menu*/
+.nav-wrapper .menu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;    
+}
+.nav-wrapper .menu li{
+    margin: 0 5px; 
+    position: relative;
+}
+.nav-wrapper .menu a{
+    display: block;
+    margin: 5px 5px;
+    padding: 6px 0;
+    text-transform: uppercase;   
+    font-size: 12px;
+    font-weight: 500; 
+    border: 2px solid transparent; 
+}
+.nav-wrapper .menu a:hover{
+    border-bottom: 2px dotted var(--third-color);
+}
+.toggle{
+    display: none;
+}
 /*botao fexa menu mobile*/
 .close-toggle{
     display: none;
@@ -31,7 +81,7 @@
     margin: 0;
     display: inline-block;    
 }
-/*icone arrow down menu******************/
+/*icone arrow-down menu*/
 .arrow-down{
     font-size: 15px;
     margin-left: 3px;
@@ -51,56 +101,6 @@
 .sub-menu-E{
     width: auto;
 }
-.dock-bar{
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    padding: 0 55px;
-    background-color: var(--second-color);
-}
-.midias-socias{
-    font-size: 23px;
-    position: relative;
-    top: 5px;    
-}
-.midias-socias i{
-    font-size: 23px;
-    margin: 0 5px;    
-}
-.nav-wrapper{
-    background: var(--primary-color);
-    padding: 0 50px;
-    height: 50px;        
-}
-.nav-wrapper .menu{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 100%;    
-}
-.nav-wrapper .menu li{
-    margin: 0 5px; 
-    position: relative;
-}
-/******************************************************/
-.nav-wrapper .menu a{
-    display: block;
-    margin: 5px 5px;
-    padding: 6px 0;
-    text-transform: uppercase;   
-    font-size: 12px;
-    font-weight: 500; 
-    border: 2px solid transparent; 
-}
-
-.nav-wrapper .menu a:hover{
-    border-bottom: 2px dotted var(--third-color);
-}
-.toggle{
-    display: none;
-}
-/**/
 
 .hero .slider{
     background-image: url(../_assets/banner-img.jpg);
@@ -216,6 +216,54 @@
     transition: all .3s linear;
     cursor: pointer;
 }
+/*PG cabelo*/
+.banner-cabelo{
+    background: url(../_assets/banner-cabelo.jpg);
+    min-height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner__titulo{
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;   
+    -webkit-text-stroke: 1px #E75A7A;
+}
+.introducao{
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+.prevImgCabelo{
+    display: flex;
+    justify-content: center;
+}
+.prevImgCabelo__img + .prevImgCabelo__img{
+    margin: 0 20px;
+}
+.servico{
+    display: flex;
+    max-width: 1000px;   
+    margin: auto;
+}
+.servico__lista{
+    width: 100%;
+    display: flex;  
+    align-items: center;  
+    font-family: 'Poppins', sans-serif;      
+}
+.servico__lista-coluna{
+    margin: 0 50px;
+}
+.servico__lista li{
+    display: block;  
+    color: #000;  
+}
+/*Fim PG cabelo*/
+
+
 footer{
     background: var(--primary-color);
     min-height: 301px;
