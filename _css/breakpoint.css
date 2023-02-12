@@ -148,3 +148,72 @@
         margin:  40px 0;
     }
 } 
+/*Pg cabelo*/
+@media only screen and (min-width: 600px) and (max-width:980px){
+    main{
+        padding: 0 10px;
+    }
+    .cabelo-servico{
+        padding: 0 20px;
+    }
+    .servico__lista{
+        justify-content: space-around;
+        margin:20px 0;
+        font-size: 11px;
+    }
+    .servico__btn{
+        padding: 4px 11px;
+        margin-left: 13px;
+    }
+    .servico__imgSecador{
+        width: 31%;
+    }
+    .servico__imgSecador{
+        display:none;
+    }    
+}
+@media only screen and (max-width:600px){
+    .banner-cabelo{
+        background-position: center center;
+    }
+    .introducao .introducao__texto{
+        padding: 0 10px;
+    }
+    .prevImgCabelo{
+        flex-direction: column; 
+        padding: 0 5px;       
+    }
+    .prevImgCabelo__img{
+        margin: 10px;
+    }
+    .servico__titulo{
+        text-align: center;
+        font-size: 18px;
+    }
+    .servico__lista{
+        flex-wrap: wrap;
+        font-size: 14px;
+        justify-content: start;
+        align-content: center;        
+    } 
+    .servico__imgSecador{
+        display:none;
+    } 
+    .center{
+        align-items: center;
+    }
+    .servico__lista-coluna{
+        padding: 20px 0;
+        min-width: 40%;
+        
+    }
+    .servico__lista-coluna + .servico__lista-coluna{
+        margin: 0;
+    }
+    .btn{
+        text-align: center;
+        width: 126px;
+        display: block;        
+        margin: 10px auto;
+    }
+}

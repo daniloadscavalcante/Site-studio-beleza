@@ -240,11 +240,19 @@
     display: flex;
     justify-content: center;
 }
-.prevImgCabelo__img + .prevImgCabelo__img{
+.prevImgCabelo__img{
     margin: 0 20px;
+    overflow: hidden;    
+}
+.prevImgCabelo__img img{    
+    transition: all .3s linear;
+}
+.prevImgCabelo__img img:hover{
+    transform: scale(1.1);    
 }
 .center{
-    width: 950px;
+    max-width: 950px;
+    width: 100%;
     margin: 70px auto;    
 }
 .servico{
@@ -268,6 +276,11 @@
 .servico__lista li{
     display: block;  
     color: #000;  
+    position: relative;
+}
+.servico__lista li > .fa-check{
+    color: #E75A7A;
+    margin-left: 5px;
 }
 .servico__btn{    
     color: #E75A7A;
@@ -277,6 +290,10 @@
     border-radius: 40px;
     border: 1px solid #F59275;
     margin-left: 27px;
+}
+.servico__btn:hover{    
+    color: #fff;
+    background: #E75A7A;      
 }
 /*Fim PG cabelo*/
 
