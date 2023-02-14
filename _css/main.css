@@ -217,12 +217,14 @@
     cursor: pointer;
 }
 /*PG cabelo*/
-.banner-cabelo{
-    background: url(../_assets/banner-cabelo.jpg);
+.hero__banner{    
     min-height: 225px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.banner-cabelo{
+    background: url(../_assets/banner-cabelo.jpg);    
 }
 .banner__titulo{
     margin: 0;
@@ -282,7 +284,7 @@
     color: #E75A7A;
     margin-left: 5px;
 }
-.servico__btn{    
+.btn{
     color: #E75A7A;
     font-weight: 500;
     padding: 8px 15px;
@@ -297,7 +299,54 @@
 }
 /*Fim PG cabelo*/
 
-
+/*PG Depilação*/
+.hero__depilacao{
+    background: url(../_assets/banner-depilacao.jpg);    
+}
+.depi-laser{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    margin:  30px auto;
+    border: 1px solid #F59275;
+    border-radius: 0 58px 0 164px;
+    padding: 40px 0;
+}
+.depi-laser__img img{
+    max-width: 100%;    
+}
+.depi-laser__texto{
+    max-width: 455px;
+    width: 100%;    
+    
+    font-weight: 500;
+}
+.depi-laser__texto p{  
+    font-weight: 500;
+}
+.depi-laser-list{
+    display: flex;    
+    margin-top: 20px;
+}
+.depi-laser-list ul + ul{
+    margin: 0 50px;        
+}
+.depi-laser_titulo-list{
+    font-size: 19px;
+    color: #000;
+    font-weight: 500;
+}
+.depi-laser-list__beneTipos li{
+    display: block;
+    font-size: 12px;
+    font-weight: 200;
+    color: #000;
+    font-family: 'Poppins', sans-serif;  
+}
+.depi-laser__btn{
+    margin: 0;
+}
+/*Fim PG Depilação*/
 footer{
     background: var(--primary-color);
     min-height: 301px;
