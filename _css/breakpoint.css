@@ -217,3 +217,54 @@
         margin: 10px auto;
     }
 }
+/*Pg depilação*/
+@media only screen and (min-width:600px) and (max-width:980px){
+    .depilacao__img img{
+        min-width: 287px;
+        max-height: 390px;
+    }
+    .depilacao{
+        border-radius: 0;   
+        column-gap: 20px;   
+        padding: 50px 10px;  
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .hero__depilacao{
+        background-position: center center;
+    }
+    .depilacao--Cera{
+        flex-direction: column-reverse;
+    }
+    .depilacao{
+        flex-direction: column;
+        border-radius: 0;   
+        column-gap: 20px;   
+        padding: 50px 10px; 
+    }
+    .depilacao__img img{
+        min-width: auto;
+        max-height: 390px;
+    }    
+    .depilacao__texto{
+        text-align: center;        
+    }
+    .depilacao__titulo{
+        margin: 15px 0;
+    }
+    .depilacao__titulo::after{
+        margin: 5px auto;
+    }
+    .depilacao-list{
+        justify-content: center;
+        text-align: left;
+        column-gap: 47px;
+    }
+    .depilacao-list ul + ul{
+        margin: 0;        
+    }
+    .depilacao__btn{
+        margin-top: 38px;
+    }     
+}

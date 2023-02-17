@@ -221,10 +221,11 @@
     min-height: 225px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 .banner-cabelo{
     background: url(../_assets/banner-cabelo.jpg);    
+    background-repeat: no-repeat;
 }
 .banner__titulo{
     margin: 0;
@@ -293,7 +294,7 @@
     border: 1px solid #F59275;
     margin-left: 27px;
 }
-.servico__btn:hover{    
+.btn:hover{    
     color: #fff;
     background: #E75A7A;      
 }
@@ -301,50 +302,68 @@
 
 /*PG Depilação*/
 .hero__depilacao{
-    background: url(../_assets/banner-depilacao.jpg);    
+    background: url(../_assets/banner-depilacao.jpg); 
+    background-repeat: no-repeat;   
+    background-size: cover;
 }
-.depi-laser{
+.depilacao{
     display: flex;
     justify-content: space-evenly;
-    width: 1200px;
-    margin:  30px auto;
+    max-width: 1200px;
+    width: 100%;
+    margin:  50px auto;
     border: 1px solid #F59275;
     border-radius: 0 58px 0 164px;
-    padding: 40px 0;
+    padding: 50px 0;
 }
-.depi-laser__img img{
+.depilacao__img img{
     max-width: 100%;    
 }
-.depi-laser__texto{
+.depilacao__titulo{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+}
+.depilacao__titulo::after{
+    content: "";
+    width: 45px;
+    height: 3px;
+    background-color: #F59275;
+    display: block;
+}
+.depilacao__texto{
     max-width: 455px;
     width: 100%;    
-    
     font-weight: 500;
 }
-.depi-laser__texto p{  
+.depilacao__texto p{  
     font-weight: 500;
 }
-.depi-laser-list{
+.depilacao-list{
     display: flex;    
     margin-top: 20px;
 }
-.depi-laser-list ul + ul{
+.depilacao-list ul + ul{
     margin: 0 50px;        
 }
-.depi-laser_titulo-list{
+.depilacao__titulo-list{
     font-size: 19px;
     color: #000;
     font-weight: 500;
 }
-.depi-laser-list__beneTipos li{
+.depilacao-list__beneTipos li{
     display: block;
     font-size: 12px;
     font-weight: 200;
     color: #000;
     font-family: 'Poppins', sans-serif;  
+    margin-left: 2px;
 }
-.depi-laser__btn{
+.depilacao__btn{
     margin: 0;
+}
+.depilacao--Cera{
+    border-radius: 58px 0 164px 0;
 }
 /*Fim PG Depilação*/
 footer{
