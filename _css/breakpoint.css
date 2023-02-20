@@ -10,6 +10,9 @@
     p{
         font-size: 12px;
     }
+    main{
+        padding: 0 10px;
+    }
     .s_estilosModerno .b_texto{
         padding: 0 24px;
     }
@@ -36,8 +39,42 @@
         margin: 10px;    
         transition: all .5s linear;
     }
+    .cabelo-servico{
+        padding: 0 20px;
+    }
+    .servico__lista{
+        justify-content: space-around;
+        margin:20px 0;
+        font-size: 11px;
+    }
+    .servico__btn{
+        padding: 4px 11px;
+        margin-left: 13px;
+    }
+    .servico__imgSecador{
+        width: 31%;
+    }
+    .servico__imgSecador{
+        display:none;
+    } 
+    .depilacao{
+        border-radius: 0;   
+        column-gap: 20px;   
+        padding: 50px 10px;  
+    }
+    .depilacao__img img{
+        min-width: 287px;
+        max-height: 390px;
+    }
+    .unhaDeGel, .imgs-ilustrativa{
+        padding: 20px;
+    }  
+    .unhaDegel__texto{
+        padding: 20px;
+    }
+    
 }
-@media only screen and (min-width: 360px) and (max-width:600px){
+@media only screen and (max-width:600px){
     h2{
         margin: 0;
         margin-bottom: 5px;
@@ -147,32 +184,6 @@
     .footer-contato{
         margin:  40px 0;
     }
-} 
-/*Pg cabelo*/
-@media only screen and (min-width: 600px) and (max-width:980px){
-    main{
-        padding: 0 10px;
-    }
-    .cabelo-servico{
-        padding: 0 20px;
-    }
-    .servico__lista{
-        justify-content: space-around;
-        margin:20px 0;
-        font-size: 11px;
-    }
-    .servico__btn{
-        padding: 4px 11px;
-        margin-left: 13px;
-    }
-    .servico__imgSecador{
-        width: 31%;
-    }
-    .servico__imgSecador{
-        display:none;
-    }    
-}
-@media only screen and (max-width:600px){
     .banner-cabelo{
         background-position: center center;
     }
@@ -216,26 +227,8 @@
         display: block;        
         margin: 10px auto;
     }
-}
-/*Pg depilação*/
-@media only screen and (min-width:600px) and (max-width:980px){
-    .depilacao__img img{
-        min-width: 287px;
-        max-height: 390px;
-    }
-    .depilacao{
-        border-radius: 0;   
-        column-gap: 20px;   
-        padding: 50px 10px;  
-    }
-    
-}
-@media only screen and (max-width: 600px){
     .hero__depilacao{
         background-position: center center;
-    }
-    .depilacao--Cera{
-        flex-direction: column-reverse;
     }
     .depilacao{
         flex-direction: column;
@@ -243,6 +236,9 @@
         column-gap: 20px;   
         padding: 50px 10px; 
     }
+    .depilacao--Cera{
+        flex-direction: column-reverse;
+    }    
     .depilacao__img img{
         min-width: auto;
         max-height: 390px;
@@ -266,19 +262,7 @@
     }
     .depilacao__btn{
         margin-top: 38px;
-    }     
-}
-/*Pg unha de gel*/
-@media only screen and (min-width:600px) and (max-width:980px){
-    .unhaDeGel, .imgs-ilustrativa{
-        padding: 20px;
-    }  
-    .unhaDegel__texto{
-        padding: 20px;
-    }
-    
-}
-@media only screen and (max-width:600px){
+    } 
     .hero__unhadegel{
         background: url(../_assets/banner-unhaDeGel.jpg);
         background-position: center center;
@@ -286,7 +270,7 @@
     .unhaDeGel{
         flex-direction: column;
         align-items: center;
-        padding: 15px;
+        padding: 10px;
         text-align: center;
         border-top: none;
     }
@@ -298,9 +282,10 @@
     }
     .imgs-ilustrativa__servico{
         flex-direction: column;
-        padding: 15px;
+        padding: 10px;
     }
     .imgs-ilustrativa__servico figure{
         margin: 10px 0;
     }
-}
+} 
+
