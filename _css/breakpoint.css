@@ -268,3 +268,39 @@
         margin-top: 38px;
     }     
 }
+/*Pg unha de gel*/
+@media only screen and (min-width:600px) and (max-width:980px){
+    .unhaDeGel, .imgs-ilustrativa{
+        padding: 20px;
+    }  
+    .unhaDegel__texto{
+        padding: 20px;
+    }
+    
+}
+@media only screen and (max-width:600px){
+    .hero__unhadegel{
+        background: url(../_assets/banner-unhaDeGel.jpg);
+        background-position: center center;
+    }
+    .unhaDeGel{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        text-align: center;
+        border-top: none;
+    }
+    .unhaDegel__titulo{
+        margin: 20px 0;
+    }
+    .unhaDeGel__btn, .imgs-ilustrativa__btn{
+        margin: 27px auto;
+    }
+    .imgs-ilustrativa__servico{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .imgs-ilustrativa__servico figure{
+        margin: 10px 0;
+    }
+}

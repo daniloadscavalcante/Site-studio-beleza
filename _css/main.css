@@ -306,7 +306,7 @@
     background-repeat: no-repeat;   
     background-size: cover;
 }
-.depilacao{
+.depilacao, .unhaDeGel{
     display: flex;
     justify-content: space-evenly;
     max-width: 1200px;
@@ -319,7 +319,7 @@
 .depilacao__img img{
     max-width: 100%;    
 }
-.depilacao__titulo{
+.depilacao__titulo, .unhaDegel__titulo{
     text-transform: uppercase;
     font-weight: 500;
     color: #000;
@@ -331,7 +331,7 @@
     background-color: #F59275;
     display: block;
 }
-.depilacao__texto{
+.depilacao__texto, .unhaDegel__texto{
     max-width: 455px;
     width: 100%;    
     font-weight: 500;
@@ -366,6 +366,77 @@
     border-radius: 58px 0 164px 0;
 }
 /*Fim PG Depilação*/
+
+/*PG unha de gel*/
+.hero__unhadegel{
+    background: url(../_assets/banner-unhaDeGel.jpg);
+}
+.unhaDeGel{
+    border-radius: 0;
+}
+.unhaDeGel__btn{
+    margin: 20px 0;
+}
+.servicoUnhagel{
+    background-color:  rgba(231, 90, 122, 0.12);
+    padding: 40px 0;
+}
+.serv{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;    
+    margin-bottom: 20px;
+}
+.servicoUnhagel__titulo{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.servicoUnhagel__list{
+    column-count: 2;
+    padding: 0 20px;
+}
+.servicoUnhagel__list li{
+    display: block; 
+    color: #F59275; 
+    font-weight: 500;  
+}
+.servicoUnhagel__list li + li{
+    margin: 10px 0;
+}
+.iconUnhagel{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-left: 3px;
+}
+.imgs-ilustrativa{    
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;    
+    border: 1px solid #F59275;
+}
+.imgs-ilustrativa__servico{   
+    display: flex;
+    justify-content: center;
+    column-gap: 45px;
+    padding: 50px 0 40px;       
+}
+.imgs-ilustrativa__servico figure{
+    overflow: hidden;
+}
+.imgs-ilustrativa__servico img{
+    transition: all .3s linear;
+}
+.imgs-ilustrativa__servico img:hover{
+    transform: scale(1.1);
+    transition: all .3s linear;
+}
+.imgs-ilustrativa__btn{
+    margin-bottom: 40px;
+}
+/*Fim PG unha de gel*/
 footer{
     background: var(--primary-color);
     min-height: 301px;
