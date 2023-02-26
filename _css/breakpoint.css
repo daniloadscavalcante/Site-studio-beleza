@@ -72,6 +72,11 @@
     .unhaDegel__texto{
         padding: 20px;
     }
+    /*PG estetica*/
+    .microagulhamento-img{
+        max-width: 34%;
+          
+    }
     
 }
 @media only screen and (max-width:600px){
@@ -286,6 +291,36 @@
     }
     .imgs-ilustrativa__servico figure{
         margin: 10px 0;
+    }
+    /*PG estetica*/
+    .banner-estetica{        
+        background-position: center center;
+    }
+    .prevImgEstetica{
+        flex-direction: column;
+    }
+    .servico{
+        padding: 0 10px;
+    }
+    .servico__lista--coluna{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .servico__imgRostocilios{
+        display: none;
+    }
+    .bronze-titulo{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .bronzeamento{
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    
+    .bronzeamento__img{
+        width: 87%;
+        margin: 10px auto;
     }
 } 
 
