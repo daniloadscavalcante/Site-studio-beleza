@@ -299,6 +299,9 @@
     .prevImgEstetica{
         flex-direction: column;
     }
+    .prevImgCabelo__img{
+        margin: 10px 22px;        
+    }
     .servico{
         padding: 0 10px;
     }

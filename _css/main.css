@@ -233,7 +233,7 @@
     color: #fff;   
     -webkit-text-stroke: 1px #E75A7A;
 }
-.introducao{
+.introducao, .maquiagem{
     max-width: 1200px;
     width: 100%;
     margin: 50px auto;
@@ -516,6 +516,71 @@
     overflow: hidden;
     margin: 20px 0;    
 }
+
+/*PG maquiagem*/
+.banner-maquiagem{
+    background-image: url("../_assets/banner-maquiagem.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.maquiagem{
+    text-align: center;
+}
+.iconePincel{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.maquiagem-servico{    
+    background: rgba(217, 214, 223, 0.41);
+}
+.servico{   
+    align-items: center;
+    column-gap: 40px;
+}
+.servico__lista--maquiagem{
+    column-count: 1;
+    display: block;        
+    width: 40%;       
+}
+.servico__lista--maquiagem li{    
+    margin-left: 5px;       
+}
+.servico__btn--maquiagem{
+    margin: 20px 0;
+}
+.servico__imgMquiagens{
+   
+}
+.maquiagem-info{
+    display: flex;
+    justify-content: space-evenly;
+   
+    padding: 80px;
+    background-image: url(../_assets/baldeMaquiagem.png);
+    background-repeat: no-repeat;
+    background-position: 91% -4%;
+}
+.maquiagem-info__img img{
+    height: auto;
+}
+.maquiagem-info__texto{    
+    width: 400px;
+    margin-top: 15px;
+}
+.maquiagem-info__texto h4{
+    color: black;   
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.maquiagem-info__texto p{     
+    font-size: 12px;   
+}
+.maquiagem-info__texto p:nth-of-type(1){   
+    margin-bottom: 20px;
+    font-size: 12px;   
+}
+/*Fim pg maquiagem*/
 footer{
     background: var(--primary-color);
     min-height: 301px;
