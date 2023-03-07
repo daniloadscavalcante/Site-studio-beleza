@@ -664,6 +664,31 @@ form input::placeholder{
     display: block;
 }
 /*Fim pg contato*/
+/*Pg profssionais*/
+.profissionais{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.profissionais figure{
+    min-width: 15.3%;
+    margin: 20px;
+}
+.profissionais figure img{
+    height: auto;
+    
+    
+}
+.profissionais figure figcaption{
+    text-align: center;
+    padding: 10px;
+    color: #E75A7A;
+    font-weight: 500;
+}
 footer{
     background: var(--primary-color);
     min-height: 301px;
