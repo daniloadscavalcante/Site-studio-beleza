@@ -665,6 +665,9 @@ form input::placeholder{
 }
 /*Fim pg contato*/
 /*Pg profssionais*/
+.banner-geral{
+    background-image: url(../_assets/banner-geral.jpg);
+}
 .profissionais{
     max-width: 1200px;
     width: 100%;
@@ -675,19 +678,73 @@ form input::placeholder{
     margin-bottom: 50px;
 }
 .profissionais figure{
-    min-width: 15.3%;
+    width: 180px;
+    
     margin: 20px;
 }
 .profissionais figure img{
-    height: auto;
-    
-    
+    height: auto;   
 }
 .profissionais figure figcaption{
     text-align: center;
     padding: 10px;
     color: #E75A7A;
     font-weight: 500;
+}
+/*GALERIAAA*/
+.galeria img{      
+    object-fit: cover;    
+}
+.galeria > div{
+    transition: all .2s linear;
+    box-shadow: 0 0 3px rgba(231, 90, 122, .2); ;
+}
+.galeria > div:hover{
+    transform: scale(1.05);    
+}
+.galeria{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto; 
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);  
+    grid-auto-rows: 100px;
+    gap: 12px;
+    margin-bottom: 80px;      
+}
+.h-1{
+    grid-row: span 1;
+}
+.h-2{
+    grid-row: span 2;
+}
+.h-3{
+    grid-row: span 3;
+}
+.w-1{
+    grid-column: span 1;
+}
+.w-2{
+    grid-column: span 2;
+}
+.w-3{
+    grid-column: span 3;
+}
+.w-4{
+    grid-column: span 4;
+}
+.galeriaImg6{
+    grid-row: 4 / 6;
+    grid-column: 4 / 6;
+}
+.galeriaImg11{    
+    grid-row: 5 / 8;
+    grid-column: 8 / 10;
+}
+.galeriaImg12{
+    grid-column: 10 / 12;
+    grid-row: 5 / span 3
 }
 footer{
     background: var(--primary-color);
