@@ -184,11 +184,11 @@
     color: var(--second-color);
     text-align: center;   
 }
-.galeria__titulo{
+.galeria-home__titulo{
     text-align: center; 
     margin: 30px 0;   
 }
-.galeria__cards{
+.galeria-home__cards{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -196,22 +196,22 @@
     flex-wrap: wrap;
     padding: 30px 0 150px;
 }
-.galeria__card{
+.galeria-home__card{
     max-width: 222px;
     width: 100%;
     overflow: hidden;
     margin: 10px;    
     transition: all .5s linear;
 }
-.galeria__card > figure{
+.galeria-home__card > figure{
     height: 100%;
     background-color: black;
 }
-.galeria__card__img{
+.galeria-home__card__img{
     transition: all .3s linear;    
     height: 100%;
 }
-.galeria__card__img:hover{
+.galeria-home__card__img:hover{
     transform: scale(1.1);
     transition: all .3s linear;
     cursor: pointer;
