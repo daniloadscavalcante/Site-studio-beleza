@@ -67,6 +67,25 @@
     left: -2px;
     display: none;       
     width: 131px;
+    z-index: 1
+}
+.menu a.item::after{
+    content: "⌵";
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    top: 8px;
+    right: -6px;        
+} 
+.sub-menu .arrow-downM::after{
+    content: "⌵";
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    top: 2px;
+    right: 32px;
 }
 .menu li:hover > ul{
     display: block;
@@ -81,6 +100,7 @@
     margin: 0;
     display: inline-block;    
 }
+
 /*icone arrow-down menu*/
 .arrow-down{
     font-size: 15px;
@@ -101,13 +121,41 @@
 .sub-menu-E{
     width: auto;
 }
-
-.hero .slider{
+/**===========================================================================*/
+.hero{
+    position: relative;
+}
+.hero .slider, .slider1, .slider2, .slider3{
     background-image: url(../_assets/banner-img.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 393px;
+    height: 393px !important;    
+}
+.slider1{
+    background-image: url(../_assets/slider1.jpg);    
+}
+.slider2{
+    background-image: url(../_assets/slider2.jpg);   
+}
+.slider3{
+    background-image: url(../_assets/slider3.jpg);   
+}
+.glider-dots{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+}
+.glider-dot{
+    background: #37193B;
+}
+.glider-dot:hover{
+    background-color: rgba(55, 25, 59, .9);
+}
+.glider-dot.active{
+    background-color: rgba(55, 25, 59, .9);
+    border: 2px solid #E75A7A;
 }
 .s_estilosModerno{
     max-width: var(--s-center);
@@ -255,10 +303,10 @@
 .prevImgCabelo__img img:hover{
     transform: scale(1.1);    
 }
-.center{
+.estetica-servico__center, .maquiagem-servico__center, .cabelo-servico__center{
     max-width: 950px;
     width: 100%;
-    margin: 70px auto;    
+    margin: 70px auto;
 }
 .servico{
     display: flex;

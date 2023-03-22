@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./_css/reset.css">
     <link rel="stylesheet" href="./_css/main.css">
     <link rel="stylesheet" href="./_css/breakpoint.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     
+  <!--Lib Glide js-->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +53,7 @@
                     <ul class="sub-menu menu-teste">
                         <li><a href="./cabelo.html" class="sub-menu__link">Cabelo</a></li>
                         <li><a href="./depilacao.html" class="sub-menu__link">Depilação</a></li>
-                        <li><a href="#" class="sub-menu__link">Manicure +</a>
+                        <li><a href="#" class="sub-menu__link arrow-downM">Manicure</a>
                             <ul class="sub-menu-M sub-menu">
                                 <li><a href="./UnhaDeGel.html" class="sub-menu__link">Unha gel</a></li>
                             </ul>
@@ -66,9 +69,15 @@
             </ul>
         </nav>
 
-        <section class="hero">
-           
-           <div class="slider"></div>
+        <section class="hero">           
+           <div class="slider-container" id="glider">
+                <div class="slider"></div>
+                <div class="slider1"></div>
+                <div class="slider2"></div>
+                <div class="slider3"></div>
+            </div>
+            
+            <div role="tablist" class="dots"></div>
         </section>
 
     </header>
@@ -186,7 +195,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./_js/slider.js"></script>
     <script src="./_js/main.js"></script>
 </body>
 </html>

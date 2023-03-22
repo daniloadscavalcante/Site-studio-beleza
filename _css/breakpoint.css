@@ -145,26 +145,31 @@
         top: 0;
         left: 0;
         width: 100%; 
-        display: none;                 
+        display: none;    
+        z-index: 1;             
     }
    
     /* Sub-menu******************************8*/
+    .menu a.item::after{      
+        font-size: 24px;        
+        top: 11px;
+        right: -19px;        
+    } 
     .sub-menu{      
         background: var(--primary-color);
         position: static;              
         display: none;         
         text-align: left;
-        width: 158px;              
+        width: 138px;              
     }
-    .menu .item::after{
-        content: "+";
-        display: block;
-        font-size: 30px;
-        position: absolute;
-        top: 13px;
-        right: -26px;
-        
-    }    
+    .nav-wrapper .menu .sub-menu li a{
+        font-size: 17px;             
+    }      
+    .sub-menu .arrow-downM::after{        
+        font-size: 24px;        
+        top: -4px;
+        right: 0px;
+    } 
     .sub-menu-M{
         width: auto;
     }
