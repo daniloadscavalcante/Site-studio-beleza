@@ -33,3 +33,12 @@ function sliderAuto(slider, miliseconds) {
 }
 
 sliderAuto(glider, 4000)
+
+
+$('.depo-carrosel').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});

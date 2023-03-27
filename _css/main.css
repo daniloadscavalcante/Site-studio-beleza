@@ -225,13 +225,43 @@
     background: linear-gradient(rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(../_assets/bg_depoimentos.jpg);
     background-position: center;
     background-attachment: fixed;    
-    min-height: 366px;    
+    min-height: 366px;  
+    display: block;  
+}
+.depoimentos__titulo{
+    color: var(--second-color);
+    text-align: center;
+    padding: 50px 0 30px;
+}
+.depo-carrosel{    
+    width: 700px;
+    margin: 0 auto;
+}
+.slick-slider .slick-track, .slick-slider .slick-list{
+    height: auto;
+}
+.slick-prev, .slick-next{
+    display: none !important;
+}
+.slick-dots{
+    bottom: -70px;
 }
 .depoimentos__info{
-    max-width: var(--c-center);
+    max-width: 100%;
     margin: auto;
     color: var(--second-color);
     text-align: center;   
+}
+.depoimentos__texto{
+    position: relative;
+    padding-top: 20px;
+}
+.depoimentos__texto::before{
+    content: "“";
+    font-size: 40px;
+    position: absolute;
+    top: -10px;
+    left: 1px;
 }
 .galeria-home__titulo{
     text-align: center; 

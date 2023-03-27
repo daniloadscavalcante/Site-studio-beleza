@@ -151,9 +151,9 @@
    
     /* Sub-menu******************************8*/
     .menu a.item::after{      
-        font-size: 24px;        
-        top: 11px;
-        right: -19px;        
+        font-size: 22px;        
+        top: 13px;
+        right: -23px;        
     } 
     .sub-menu{      
         background: var(--primary-color);
@@ -166,8 +166,8 @@
         font-size: 17px;             
     }      
     .sub-menu .arrow-downM::after{        
-        font-size: 24px;        
-        top: -4px;
+        font-size: 22px;        
+        top: -3px;
         right: 0px;
     } 
     .sub-menu-M{

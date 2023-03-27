@@ -22,6 +22,15 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Contato</title>
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("YhtMnrVOgtdSa-KXi");
+        })();
+    </script>
+    <script src="./_js/main.js"></script>
    
 </head>
 <body>
@@ -81,15 +90,15 @@
         
         <section class="contatoMain">  
             <div class="contatoMain__form">             
-                    <form action="#" method="POST">
+                    <form >
                         <label for="cxNome">Nome Completo:</label>
-                        <input type="text" id="cxNome" placeholder="Nome:">
+                        <input type="text" id="cxNome" placeholder="Nome:" id="name">
                         <label for="cxEmail">E-mail:</label>
-                        <input type="email" id="cxEmail" placeholder="Email:">
+                        <input type="email" id="cxEmail" placeholder="Email:" id="email">
                         <label for="cxWhat">Whatsapp:</label>
-                        <input type="tel" id="cxWhat" placeholder="(xx)xxxxx-xxxx">
+                        <input type="tel" id="cxWhat" placeholder="(xx)xxxxx-xxxx" id="zap">
 
-                        <a href="#" class="btn btn-form">Cadastrar</a>
+                        <button type="submit" class="btn btn-form" onclick="sendMail()">Cadastrar</button>
                     </form>  
                     
                     <div class="contatoMain__maps">
@@ -138,6 +147,6 @@
         </div>
     </footer>
 
-    <script src="./_js/main.js"></script>
+    
 </body>
 </html>
