@@ -56,7 +56,6 @@
 .toggle{
     display: none;
 }
-/*botao fexa menu mobile*/
 .close-toggle{
     display: none;
 }
@@ -121,7 +120,6 @@
 .sub-menu-E{
     width: auto;
 }
-/**===========================================================================*/
 .hero{
     position: relative;
 }
@@ -234,7 +232,7 @@
     padding: 50px 0 30px;
 }
 .depo-carrosel{    
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
 }
 .slick-slider .slick-track, .slick-slider .slick-list{
@@ -698,6 +696,8 @@ form input::placeholder{
 .btn-form{
     margin:20px 0;
     border-radius: 0;
+    background-color: transparent;
+    cursor: pointer;
 }
 .contatoMain__maps{
     max-width: 600px;
@@ -770,16 +770,9 @@ form input::placeholder{
     color: #E75A7A;
     font-weight: 500;
 }
-/*GALERIAAA*/
+/*GALERIAAA============================================*/
 .galeria img{      
     object-fit: cover;    
-}
-.galeria > div{
-    transition: all .2s linear;
-    box-shadow: 0 0 3px rgba(231, 90, 122, .2); ;
-}
-.galeria > div:hover{
-    transform: scale(1.05);    
 }
 .galeria{
     max-width: 1100px;
@@ -791,6 +784,15 @@ form input::placeholder{
     grid-auto-rows: 100px;
     gap: 12px;
     margin-bottom: 80px;      
+}
+
+.galeria > div{
+    transition: all .2s linear;
+    box-shadow: 0 0 3px rgba(231, 90, 122, .2); ;
+}
+.galeria > div:hover{
+    transform: scale(1.05);  
+    cursor: pointer;   
 }
 .h-1{
     grid-row: span 1;
@@ -825,6 +827,33 @@ form input::placeholder{
     grid-column: 10 / 12;
     grid-row: 5 / span 3
 }
+
+#lightbox{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);  
+    display: none;  
+}
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+#lightbox.active::before{
+    content: "X";
+    padding: 30px 20px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+
 footer{
     background: var(--primary-color);
     min-height: 301px;

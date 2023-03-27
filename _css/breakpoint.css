@@ -440,6 +440,9 @@
         grid-row: auto;
         grid-column: auto;
     }
+    #lightbox.active::before{
+        font-size: 25px;
+    }
     
 } 
 
