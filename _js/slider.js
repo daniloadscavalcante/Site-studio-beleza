@@ -38,6 +38,8 @@ sliderAuto(glider, 4000)
 $('.depo-carrosel').slick({
   dots: true,
   infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
   speed: 500,
   fade: true,
   cssEase: 'linear'

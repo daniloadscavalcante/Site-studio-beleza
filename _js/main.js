@@ -2,6 +2,7 @@ const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
 const closeToggle = document.querySelector(".close-toggle");
 
+
 toggle.addEventListener("click", () =>{
     menu.style.display="flex";
 });
@@ -47,14 +48,27 @@ function send(){
         })
 }
 
-
 btneviar.addEventListener("click", e => {
-    e.preventDefault()    
-    send()
-    document.querySelector('#form').reset();
+    e.preventDefault()  
+    let nomef = form.nome.value;
+    let emailf = form.email.value;
+    let zapf = form.zap.value;
+    if (nomef =="") {
+        alert("preecha o nome")
+        form.nome.focus();
+    }else if(emailf ==""){
+        alert("preecha o email")
+        form.email.focus();
+    }else if(zapf ==""){
+        alert("insira um numero")
+        form.zap.focus();
+    }
+    else {
+        send()
+        document.querySelector('#form').reset(); 
+    }    
 })
-
-
+ 
 
 
 
